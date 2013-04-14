@@ -14,7 +14,8 @@
 
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
-	<script type="text/javascript" src="js/bjqs-1.3.min.js"></script>		
+	<script type="text/javascript" src="js/bjqs-1.3.min.js"></script>
+	<script type="text/javascript" src="portfolio/scripts/less.js"></script>
 </head>
 <body>
 	<div id="top_banner">&nbsp;</div>
@@ -39,7 +40,7 @@
 			<div id="bio_section">
 				<div id="bio_left">
 					<h2>No Day but Today</h2>						
-					<div class="photo"><img src="images/me.png" /></div>
+					<div class="photo"><img src="img/me.png" /></div>
 					<h3>@bsiddiqui</h3>
 					<p class="twitter">I'm a junior, studying CS and Econ at Harvard. I love coffee, traveling, ballroom, San Francisco, and making life better with technology</p>
 					<h3 class="clear">If you want the longer version,</h3>
@@ -55,8 +56,8 @@
 					<h2>Current Faves</h2>
 					<div id="slider">
 						<ul class="bjqs">
-							<li><img src="images/walkingdead.png" title="The Walking Dead"></li>
-							<li><img src="images/greys.png" title="Greys Anatomy (say what you want, but Derrick Shepher is a badass"></li>
+							<li><img src="img/walkingdead.png" title="The Walking Dead"></li>
+							<li><img src="img/greys.png" title="Greys Anatomy (say what you want, but Derrick Shepher is a badass"></li>
 						</ul>
 					</div>
 					<br/>
@@ -70,7 +71,7 @@
 				</div>
 			</div>
 			<div id="resume_section">
-				<div class="download"><a href="images/Basil Siddiqui - Resume.pdf">&#8595; Download PDF</a></div>
+				<div class="download"><a href="img/Basil Siddiqui - Resume.pdf">&#8595; Download PDF</a></div>
 				<div id="resume_left">
 					<h2>Work Experience</h2>
 					<h3>Co-Founder</h3>
@@ -107,7 +108,6 @@
 						<li>Windows and Unix-based systems</li>
 						<li>Wordpress / Django / Joomla</li>
 						<li>Xcode</li>
-						<li><span style="font-family:cmr10, LMRoman10-Regular, Times, serif;">L<span style="text-transform: uppercase; font-size: 70%; margin-left: -0.36em; vertical-align: 0.3em; line-height: 0; margin-right: -0.15em;">a</span>T<span style="text-transform: uppercase; margin-left: -0.1667em; vertical-align: -0.5ex; line-height: 0; margin-right: -0.125em;">e</span>X</span></li>
 					</ul>
 					<h2>Education</h2>
 					<h3>Harvard University</h3>
@@ -133,11 +133,50 @@
 				</div>
 			</div>
 			<div id="projects_section">
-		
+				<!--<h2>Stuck to the Refrigerator</h2>
+				<p>Here are a few things I've been working on lately.</p>
+				<div class="projects">
+					<div class="project">
+						<img src="images/copypaste.png" />
+						<h3><a href="copy_paste/index.html">Copy Paste &rarr;</a></h3>
+						<p>A simple tool that counts words and characters and converts input to lowercase, uppercase, title case, or reverse case. More features in the works!</p>
+						<h4>What I used:</h4> <p class="details">Javascript/jQuery, HTML/CSS</p>
+					</div>
+					<div class="project">
+						<img src="images/unfriendfinder.png" />
+						<h3><a href="http://www.unfriendfinder.me">Unfriend Finder &rarr;</a></h3>
+						<p>Finally, a Facebook app that accurately detects defriendings and deactivations. Currently serving over a quarter of a million users!</p>
+						<h4>What I used:</h4> <p class="details">Facebook API, PHP, SQL, Javascript, HTML/CSS</p>
+					</div>
+					<div class="project">
+						<img src="images/gateswap.png" />
+						<h3><a href="http://www.gateswap.com">GateSwap &rarr;</a></h3>
+						<p>A Craigslist-style community for college students to sell textbooks, trade services, organized rideshares, and more. Front-end development by yours truly.</p>
+						<h4>What I used:</h4> <p class="details">Django, Javascript/jQuery, HTML/CSS</p>
+					</div>					
+					<div class="project clear">
+						<img src="images/hrdc.png" />
+						<h3><a href="http://www.hrdctheater.com">HRDC &rarr;</a></h3>
+						<p>Redesign of the Harvard-Radcliffe Dramatic Club website. Makes it easy for board members to add articles, edit slideshows, and upload photo galleries.</p>
+						<h4>What I Used:</h4> <p class="details">Wolf CMS, PHP, Javascript/jQuery, HTML/CSS</p>
+					</div>				
+					<div class="project">
+						<img src="images/collegesmash.png" />
+						<h3><a href="http://www.cs171.org/2012/final-projects/web/10_CollegeSmash/">College Smash &rarr;</a></h3>
+						<p>A Java applet that can visually filter, sort, and compare colleges in the United States based on various metrics like tuition, SAT scores, and class size.</p>
+						<h4>What I used:</h4> <p class="details">Processing, Python, HTML/CSS</p>
+					</div>				
+					<div class="project">
+						<img src="images/personal_v2.png" />
+						<h3><a href="portfolio/v2/index.html">AngelaConstance.com &rarr;</a></h3>
+						<p>First iteration of my personal website. Still alive for the curious!<br/><br/><br/></p>
+						<h4>What I used:</h4> <p class="details">PHP, Javascript/jQuery, HTML/CSS</p>
+					</div>								
+				</div>-->		
 			</div>
 			<div id="contact_section">
 				<div id="contact_left">
-					<h2>Let's be Friends</h2>
+					<h2>Let's be friends!</h2>
 					<div class="contact_buttons">
 						<a href="https://twitter.com/basilksiddiqui">t</a><br/>
 						<a href="http://www.linkedin.com/in/bsiddiqui">i</a>
@@ -146,7 +185,7 @@
 					<p><a href="https://github.com/bsiddiqui">Fork me on GitHub</a></p>
 				</div>
 				<div id="contact_right">
-					<h2>Owl Post</h2>
+					<h2>Contact Me</h2>
 					<p>I love getting mail! I read every word that passes through my inbox, and promise to respond to your message as soon as possible. So type away!</p>
 
 					<p>You can also email me directly at <a href="mailto:me@bsiddiqui.com.com">me@bsiddiqui.com</a>.</p>
@@ -165,7 +204,7 @@
 								<textarea name="message" id="message" value="" rows="7" class="text-input" /></textarea>
 								<label class="error" for="message" id="message_error">&nbsp; *</label>
 								<p>
-									<input type="submit" name="submit" class="button" id="submit_btn" value="Off you go, Hedwig!" />  
+									<input type="submit" name="submit" class="button" id="submit_btn" value="Submit!" />  
 								</p>
 							</fieldset>  
 						</form>  
