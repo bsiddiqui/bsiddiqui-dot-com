@@ -1,0 +1,475 @@
+/* ------------------------------------------ FONTS */
+@font-face {
+  font-family: 'Socialico';
+  src: url('http://www.angelaconstance.com/portfolio/fonts/socialico-webfont.eot');
+  src: url('http://www.angelaconstance.com/portfolio/fonts/socialico-webfont.eot?#iefix') format('embedded-opentype'), url('http://www.angelaconstance.com/portfolio/fonts/socialico-webfont.woff') format('woff'), url('http://www.angelaconstance.com/portfolio/fonts/socialico-webfont.ttf') format('truetype'), url('http://www.angelaconstance.com/portfolio/fonts/socialico-webfont.svg#socialicoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* ------------------------------------------ VARIABLES */
+@accent: #FF9D2E;
+/* ------------------------------------------ BASIC STYLES */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  cursor: default !important;
+}
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: #333333;
+}
+a {
+  text-decoration: none;
+  color: #333333;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+::selection {
+  background: @accent;
+  color: #FFF;
+}
+#wrapper {
+  width: 960px;
+  margin: 0px auto;
+}
+.clear {
+  clear: both;
+}
+/* ------------------------------------------ HEADER */
+#top_banner {
+  background: @accent;
+  height: 10px;
+}
+#header {
+  overflow: auto;
+  margin: 20px 0px;
+  padding: 30px 0px 0px;
+}
+#title {
+  float: left;
+}
+#title a {
+  color: #333333;
+}
+#title h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  margin: 0;
+  font-size: 36px;
+}
+#title p {
+  margin: 0 0 10px;
+}
+#title p a {
+  color: @accent;
+}
+#title p a:hover {
+  color: #333333;
+}
+#navigation {
+  float: right;
+  margin-top: 24px;
+}
+#navigation a {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 5px 10px;
+  margin: 0px 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+#navigation a:hover,
+#navigation .current {
+  background: #333333;
+  color: #FFF;
+}
+/* ------------------------------------------ MAIN */
+#main {
+  clear: both;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-top: 1px solid;
+}
+#main > div {
+  display: none;
+  margin: 20px 0px;
+}
+#main > div h2 {
+  color: @accent;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+/* ------------------------------------------ HOMEPAGE */
+#home_section {
+  background: #333333;
+  padding: 50px;
+}
+#home_section h2 {
+  color: #FFF !important;
+  font-weight: 900 !important;
+  font-size: 60px;
+}
+#home_section p {
+  color: #FFF !important;
+  font-size: 36px;
+}
+#home_section p strong {
+  font-weight: 900;
+}
+/* ------------------------------------------ RESUME */
+#resume_section {
+  overflow: auto;
+}
+#resume_section .download {
+  margin: 24px 0px 0px;
+}
+#resume_section .download a {
+  display: inline-block;
+  padding: 10px;
+  background: #e32154;
+  color: #FFF;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+#resume_section .download a :hover {
+  background: #333333;
+}
+#resume_section .download a:hover {
+  background: #333333 !important;
+}
+#resume_section h3 {
+  margin: 20px 0px 0px;
+}
+#resume_section h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+}
+#resume_section h5 {
+  margin: 3px 0px 0px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 300;
+}
+#resume_section p {
+  margin: 10px 0 30px;
+}
+#resume_section p strong {
+  color: @accent;
+  font-weight: 400;
+}
+#resume_section #resume_left {
+  float: left;
+  width: 500px;
+}
+#resume_section #resume_right {
+  float: right;
+  width: 420px;
+}
+#courses_link {
+  color: @accent !important;
+}
+#courses {
+  position: absolute;
+  display: none;
+  z-index: 1000;
+  background: #e32154;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #FFF;
+  width: 300px;
+}
+#courses ul,
+#courses li {
+  margin: 10px 5px;
+  padding: 0;
+  list-style-type: none;
+}
+/* ------------------------------------------ PROJECTS */
+#projects_section h2 {
+  margin-top: 40px !important;
+}
+#projects_section h3 {
+  margin: 10px 0px 5px !important;
+}
+#projects_section h3 a {
+  color: @accent;
+  font-weight: 400;
+}
+#projects_section h3 a:hover {
+  color: #333333;
+}
+#projects_section p {
+  margin: 5px 0px 10px;
+}
+#projects_section h4 {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+#projects_section .details {
+  font-size: 12px;
+}
+div .project {
+  float: left;
+  width: 290px;
+  margin: 20px 0 !important;
+  padding-right: 40px !important;
+}
+.projects .project:nth-child(3n) {
+  padding-right: 0px !important;
+}
+.project img {
+  width: 290px;
+}
+/* ------------------------------------------ ABOUT */
+#bio_section {
+  overflow-x: hidden;
+}
+#bio_section .photo {
+  float: left;
+  margin: 0 !important;
+  width: 120px;
+  height: 120px;
+}
+#bio_section h3 {
+  margin: 0;
+}
+#bio_section a {
+  color: @accent;
+}
+#bio_section a:hover {
+  color: #333333;
+}
+#bio_left {
+  float: left;
+  width: 450px;
+}
+#bio_left .twitter {
+  margin: 0;
+}
+.bio_long {
+  font-size: 14px;
+}
+.bio_long strong {
+  color: @accent !important;
+  font-weight: 700;
+}
+#bio_right {
+  float: right;
+  width: 450px;
+}
+#bio_right #slider img {
+  width: 450px;
+}
+.loves {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.loves li {
+  border-bottom: 1px #333333 dotted;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+/* ------------------------------------------ CONTACT */
+#contact_section {
+  overflow: auto;
+}
+#contact_section #contact_left {
+  float: left;
+  width: 300px;
+}
+#contact_section #contact_left .contact_buttons a {
+  display: inline-block;
+  font-family: "Socialico";
+  font-size: 64px;
+  margin: 12px 0px 12px;
+  position: relative;
+  top: 0px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+#contact_section #contact_left .contact_buttons a:hover {
+  display: inline-block;
+  position: relative;
+  top: -12px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+#contact_section #contact_left p {
+  margin-top: 30px;
+}
+#contact_section #contact_left p a {
+  font-size: 14px;
+  color: @accent;
+}
+#contact_section #contact_left p a:hover {
+  color: #333333;
+}
+#contact_section #contact_right {
+  width: 600px;
+  margin-left: 60px;
+  float: left;
+}
+#contact_section #contact_right a {
+  color: @accent;
+}
+#contact_section #contact_right a:hover {
+  color: #333;
+}
+#contact_form {
+  overflow: auto;
+}
+#contact_form form,
+#contact_form fieldset {
+  border: 0px !important;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+#contact_form input:focus,
+#contact_form textarea:focus {
+  border: 1px solid #333333 !important;
+  color: #333333 !important;
+}
+#contact_form input[type="submit"] {
+  border: 0;
+  outline: 0;
+  clear: both;
+  overflow: auto;
+  padding: 5px;
+  margin: 10px 0px;
+  background: #e32154;
+  color: #FFF;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+#contact_form input[type="submit"]:hover,
+#contact_form input[type="submit"]:active,
+#contact_form input[type="submit"]:focus {
+  border: 0 !important;
+  outline: 0 !important;
+  background: #333333 !important;
+  color: #FFF !important;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  cursor: pointer;
+}
+#contact_form label {
+  clear: both;
+  float: left;
+  width: 100px;
+}
+#contact_form input[type="text"],
+#contact_form textarea {
+  float: left;
+  border: 1px solid #aaaaaa;
+  outline: 0;
+  margin-bottom: 15px;
+  padding: 5px;
+  color: #aaaaaa;
+}
+#contact_form input[type="text"] {
+  width: 200px;
+}
+#contact_form textarea {
+  width: 300px !important;
+  max-width: 300x !important;
+}
+#contact_form p {
+  clear: both;
+}
+#contact_form .error {
+  clear: none !important;
+  color: #D00;
+}
+#success {
+  width: 400px;
+  font-family: "Satisfy";
+  font-size: 36px;
+  color: @accent;
+}
+/* ------------------------------------------ FOOTER */
+#footer {
+  display: none;
+  clear: both;
+  text-align: center;
+  padding: 10px 0px;
+  font-size: 12px;
+}
+#footer a {
+  color: @accent;
+}
+#footer a:hover {
+  color: #333333;
+}
+/* ------------------------------------------ PLUGINS */
+ul.bjqs {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+li.bjqs-slide {
+  position: absolute;
+  display: none;
+}
+ul.bjqs-controls {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 9999;
+}
+ul.bjqs-controls.v-centered {
+  text-align: right;
+  margin-right: 20px;
+}
+ul.bjqs-controls.v-centered li {
+  display: inline-block;
+  margin-top: -10px;
+}
+ul.bjqs-controls.v-centered li a {
+  display: inline-block;
+  font-family: "Lato";
+  text-align: center;
+  font-size: 18px;
+  font-weight: 100;
+  height: 24px;
+  width: 24px;
+  line-height: 24px;
+  margin-right: 10px;
+  background: #e32154;
+  color: #FFF !important;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+}
+ul.bjqs-controls.v-centered li a:hover {
+  background: #333333;
+}
+p.bjqs-caption {
+  display: block;
+  position: absolute;
+  bottom: -34px;
+  font-style: italic;
+}

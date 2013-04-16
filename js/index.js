@@ -15,17 +15,7 @@ $(window).load(function() {
 		target = $(this).attr("href");
 		$("#main > div").hide();
 		$(target + "_section").fadeIn();
-	});
-
-	// Courses tooltip effect
-	$("#courses_link").bind("mousemove", function(event) {
-	    $("#courses").css({
-	        top: event.pageY + 3 + "px",
-	        left: event.pageX + 7 + "px"
-	    }).show();
-	}).bind("mouseout", function() {
-	    $("#courses").hide();
-	});				
+	});		
 
 	// Contact form submission
 	$(function() {  
@@ -95,6 +85,7 @@ $(window).load(function() {
 	});  	   				
 });
 
+// HTML5 Grayscale Image Hover - http://webdesignerwall.com/tutorials/html5-grayscale-image-hover
 // Image desaturation
 $(window).load(function(){
 	
