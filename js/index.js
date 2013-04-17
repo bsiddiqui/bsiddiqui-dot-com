@@ -15,7 +15,13 @@ $(window).load(function() {
 		target = $(this).attr("href");
 		$("#main > div").hide();
 		$(target + "_section").fadeIn();
-	});		
+	});
+
+	// Add theme color to footer
+	$(function (){
+		var color = rgb2hex($('#top_banner').css('background-color')).toUpperCase();
+		$("#color").html("<a href='http://www.colourlovers.com/color/" + color + "'><span>#" + color + "</span></a>")
+	});
 
 	// Contact form submission
 	$(function() {  
@@ -52,36 +58,36 @@ $(window).load(function() {
 			if (form == false) {
 				return false;
 			}
-		  
+			
 			var dataString = 'name=' + name + '&email=' + email + '&message=' + message;   
 			$.ajax({  
-			  type: "POST",  
-			  url: "bin/process.php",  
-			  data: dataString,  
-			  success: function() {  
-				$('#contact_form').html("<div id='success'></div>");  
-				$('#success').html("<p>Thanks! I'll be in touch soon.</p>")  
-				.hide()  
-				.fadeIn(300);  
-			  }  
+				type: "POST",  
+				url: "bin/process.php",  
+				data: dataString,  
+				success: function() {  
+					$('#contact_form').html("<div id='success'></div>");  
+					$('#success').html("<p>Thanks! I'll be in touch soon.</p>")  
+					.hide()  
+					.fadeIn(300);  
+				}  
 			});  
 			return false;  			  
 			
 		});  
-	}); 
+}); 
 
 	// Initialize slider
 
 	$("#slider").bjqs({
 		animtype: 'fade',
-    	height: 270,
-    	width: 480,
-    	usecaptions: true,
-    	showmarkers: false,
-    	animduration: 600,
-    	animspeed: 6000,
-    	nexttext: "&rarr;",
-    	prevtext: "&larr;"
+		height: 270,
+		width: 480,
+		usecaptions: true,
+		showmarkers: false,
+		animduration: 600,
+		animspeed: 6000,
+		nexttext: "&rarr;",
+		prevtext: "&larr;"
 	});  	   				
 });
 
@@ -141,4 +147,13 @@ function grayscale(src){
 	}
 	ctx.putImageData(imgPixels, 0, 0, 0, 0, imgPixels.width, imgPixels.height);
 	return canvas.toDataURL();
+}
+
+// Converts rgb values to hexadecimal
+function rgb2hex(rgb) {
+	rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+	function hex(x) {
+		return ("0" + parseInt(x).toString(16)).slice(-2);
+	}
+	return hex(rgb[1]) + hex(rgb[2]) + hex(rgb[3]);
 }
