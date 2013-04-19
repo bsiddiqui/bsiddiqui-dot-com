@@ -16,20 +16,29 @@
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
 	<script type="text/javascript" src="js/bjqs-1.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.lettering.js"></script>
 	<script type="text/javascript" src="js/less.js"></script>
 </head>
 <body>
+	<script>
+		$(function() {
+		$(".letter-container h1 a").lettering();
+	});
+	</script>
 	<div id="top_banner">&nbsp;</div>
 	<div id="wrapper">
 		<div id="header">
 			<div id="title">
-				<a href="#home"><h1>Basil K. Siddiqui</h1></a>
+				<div class="letter-container">
+					<h1><a href="#home">Basil K. Siddiqui</a></h1>
+				</div>
 				<p><a href="mailto:me@bsiddiqui.com">me@bsiddiqui.com</a></p>					
 			</div>
 			<div id="navigation">
 				<a href="#bio">about</a>					
 				<a href="#resume">r&eacute;sum&eacute;</a>			
-				<a href="#projects">projects</a>				
+				<a href="#projects">projects</a>
+				<a href="#projects">blog</a>
 				<a href="#contact">contact</a>
 			</div>
 		</div>
@@ -61,6 +70,7 @@
 							<li><img src="img/suits.png" title="Suits"></li>
 							<li><img src="img/espresso.png" title="Espresso"></li>
 							<li><img src="img/yogurt.png" title="Frozen Yogurt (especially from Berryline)"></li>
+							<li><img src="img/innout.png" title="In-N-Out... 'nuff said"></li>
 						</ul>
 					</div>
 					<br/>
@@ -108,9 +118,10 @@
 					</ul>							
 					<h3>Tools + Environments</h3>
 					<ul>
-						<li>Windows and Unix-based systems</li>
-						<li>Wordpress / Django / Joomla</li>
-						<li>Xcode</li>
+						<li>OS - Windows and Unix-based</li>
+						<li>Web - Rails / Django</li>
+						<li>CMS - Wordpress</li>
+						<li>IDE - Xcode</li>
 					</ul>
 					<h2>Education</h2>
 					<h3>Harvard University</h3>

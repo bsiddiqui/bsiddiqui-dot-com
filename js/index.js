@@ -10,6 +10,11 @@ $(window).load(function() {
 	}
 	$("#footer").show();
 	
+	// Animate title
+	$(function() {
+		$(".letter-container h1 a").lettering();
+	});
+	
 	// Page transitions
 	$("#title a, #navigation a").click(function() {
 		target = $(this).attr("href");
