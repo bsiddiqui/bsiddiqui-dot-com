@@ -9,7 +9,18 @@
 	<meta name="description" content="Hi! I'm Basil Siddiqui. I am currently an undergrad, studying Economics and Computer Science. Aside from being a student, I am an avid investor and entrepreneur. I love logic puzzles, hackathons, and solving problems with technology." />
 	<meta name="keywords" content="Siddiqui, Basil, Harvard, CS">
 
-	<link rel="stylesheet/less" type="text/css" href="css/style.less" />
+	<script>
+	// choose style sheet
+	function chooseStyle() {
+		var css = ['css/accent133CA7.less','css/accentDB0C0C.less', 'css/accent077003.less'];
+		var i = Math.floor(Math.random()*css.length);
+		var style = css[i];
+
+		return style;
+	}
+
+	document.write('<link rel="stylesheet/less" href="'+chooseStyle()+'" type="text/css">');
+	</script>
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Open+Sans+Condensed:700|Satisfy" type="text/css">
 	<link rel="shortcut icon" href="img/favicon.ico">
 
@@ -20,11 +31,6 @@
 	<script type="text/javascript" src="js/less.js"></script>
 </head>
 <body>
-	<script>
-		$(function() {
-		$(".letter-container h1 a").lettering();
-	});
-	</script>
 	<div id="top_banner">&nbsp;</div>
 	<div id="wrapper">
 		<div id="header">
@@ -38,7 +44,7 @@
 				<a href="#bio">about</a>					
 				<a href="#resume">r&eacute;sum&eacute;</a>			
 				<a href="#projects">projects</a>
-				<a href="#projects">blog</a>
+				<a href="#blog">blog</a>
 				<a href="#contact">contact</a>
 			</div>
 		</div>
@@ -188,6 +194,12 @@
 					</div>								
 				</div>-->		
 			</div>
+			<div id ="blog_section">
+				<script type="text/javascript" src="http://basilsiddiqui.tumblr.com/js">
+				</script>
+
+
+			</div>
 			<div id="contact_section">
 				<div id="contact_left">
 					<h2>Let's be friends!</h2>
@@ -231,5 +243,12 @@
 			Handcoded with love by <a href="https://github.com/bsiddiqui/" target="_blank">Basil Siddiqui</a>. The color of the moment is <span id="color"></span>&mdash;refresh for a makeover!
 		</div>
 	</div>
+	<script>
+	// Typography Effects - http://tympanus.net/codrops/2011/11/28/typography-effects-with-css3-and-jquery/
+	// Animate title
+	$(function() {
+		$(".letter-container h1 a").lettering();
+	});
+	</script>
 </body>
 </html>

@@ -9,12 +9,7 @@ $(window).load(function() {
 		$("#home_section").show();
 	}
 	$("#footer").show();
-	
-	// Animate title
-	$(function() {
-		$(".letter-container h1 a").lettering();
-	});
-	
+
 	// Page transitions
 	$("#title a, #navigation a").click(function() {
 		target = $(this).attr("href");
