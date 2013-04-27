@@ -11,7 +11,7 @@ $(window).load(function() {
 	$("#footer").show();
 
 	// Page transitions
-	$("#title a, #navigation a").click(function() {
+	$("#title a, #navigation a, .bio_long #blog_link").click(function() {
 		target = $(this).attr("href");
 		$("#main > div").hide();
 		$(target + "_section").fadeIn();

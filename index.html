@@ -22,6 +22,7 @@
 	document.write('<link rel="stylesheet/less" href="'+chooseStyle()+'" type="text/css">');
 	</script>
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Open+Sans+Condensed:700|Satisfy" type="text/css">
+	<link rel="stylesheet/less" href="css/font-awesome.less">
 	<link rel="shortcut icon" href="img/favicon.ico">
 
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
@@ -32,6 +33,13 @@
 </head>
 <body>
 	<div id="top_banner">&nbsp;</div>
+	<div id="social_buttons">
+		<a href="https://www.facebook.com/basilsiddiqui">!</a>
+		<a href="https://www.facebook.com/basilsiddiqui">f</a>
+		<a href="http://www.linkedin.com/in/bsiddiqui">i</a>
+		<a href="https://twitter.com/basilksiddiqui">l</a>
+	</div>
+
 	<div id="wrapper">
 		<div id="header">
 			<div id="title">
@@ -55,9 +63,9 @@
 			</div>
 			<div id="bio_section">
 				<div id="bio_left">
-					<h2>Perpetual Motion</h2>						
+					<h2>About.me</h2>						
 					<div class="photo"><img src="img/me.png" /></div>
-					<h3>@bsiddiqui</h3>
+					<h3><a href="https://twitter.com/basilksiddiqui" target="_blank">@basilksiddiqui</a></h3>
 					<p class="twitter">I'm a junior, studying CS and Econ at Harvard. I love coffee, traveling, ballroom, San Francisco, and making life better with technology</p>
 					<h3 class="clear">If you want the longer version,</h3>
 					<div class="bio_long">
@@ -65,18 +73,18 @@
 
 						<p>My goals in life are to support my family, be a great friend, travel the world, launch a company with a higher purpose than revenue, and to learn and grow from passionate and intelligent people.</p>
 
-						<p>When I'm not working I enjoy ballroom dancing, listening to music, reading, trying new food, tasting wine, and traveling. You can learn more about me by following me on twitter (@basilksiddiqui) or reading my blog (bsiddiqui.com).</p>
+						<p>When I'm not working I enjoy ballroom dancing, listening to music, reading, trying new food, tasting wine, and traveling. You can learn more about me by <a href="https://twitter.com/basilksiddiqui" target="_blank">following me on twitter</a> or reading <a id="blog_link" href="#blog">my blog</a>.</p>
 					</div>
 				</div>
 				<div id="bio_right">
-					<h2>Current Faves</h2>
+					<h2>My Favorites</h2>
 					<div id="slider">
 						<ul class="bjqs">
 							<li><img src="img/walkingDead.png" title="The Walking Dead"></li>
 							<li><img src="img/suits.png" title="Suits"></li>
 							<li><img src="img/espresso.png" title="Espresso"></li>
 							<li><img src="img/yogurt.png" title="Frozen Yogurt (especially from Berryline)"></li>
-							<li><img src="img/innout.png" title="In-N-Out... 'nuff said"></li>
+							<li><img src="img/innout.png" title="In-N-Out... Animal Style"></li>
 						</ul>
 					</div>
 					<br/>
@@ -86,7 +94,14 @@
 						<li>Logic puzzles</li>
 						<li>Javascript</li>
 						<li>Espresso</li>
-					</ul>						
+					</ul>
+					<h2>Favorite Sites</h2>
+					<ul class="loves">
+						<li>Stack Overflow</li>
+						<li>Quora</li>
+						<li>WSJ</li>
+					</ul>
+
 				</div>
 			</div>
 			<div id="resume_section">
@@ -200,19 +215,24 @@
 			</div>
 			<div id="contact_section">
 				<div id="contact_left">
-					<h2>Let's be friends!</h2>
-					<div class="contact_buttons">
+					<h2>Direct Contact</h2>
+					<!-- <div class="contact_buttons">
 						<a href="https://twitter.com/basilksiddiqui">l</a>
 						<a href="http://www.linkedin.com/in/bsiddiqui">i</a>
 						<a href="https://www.facebook.com/basilsiddiqui">f</a>
+						<a href="https://www.facebook.com/basilsiddiqui">!</a>
+					</div> -->
+					<div class="contact_info">
+						<p><i class="icon-envelope-alt icon-large"></i>me@bsiddiqui.com</p>
+						<p><i class="icon-phone icon-large"></i>916.214.6370</p>
+						<!-- <p><i class="icon-twitter icon-large"></i>@basilksiddiqui</p> -->
+						<p><i class="icon-comment icon-large"></i>basil.siddiqui</p>
 					</div>
-					<p><a href="https://github.com/bsiddiqui">Fork me on GitHub</a></p>
+					<!-- <p><a href="https://github.com/bsiddiqui">Fork me on GitHub</a></p> -->
 				</div>
 				<div id="contact_right">
-					<h2>Contact Me</h2>
-					<p>I love getting mail! I read every word that passes through my inbox, and promise to respond to your message as soon as possible. So type away!</p>
-
-					<p>You can also email me directly at <a href="mailto:me@bsiddiqui.com.com">me@bsiddiqui.com</a>.</p>
+					<h2>I love meeting new people!</h2>
+					<p>Feel free to get in touch if you want to grab a coffee, talk about a project, or just want to say hi.</p>
 					<div id="contact_form">  
 						<form name="contact" action="">  
 							<fieldset>  

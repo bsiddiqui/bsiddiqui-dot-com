@@ -15,6 +15,7 @@ body {
   margin: 0;
   padding: 0;
   cursor: default !important;
+  /*background-color: #E6F3FA;*/
   /*background-image:url('../img/wood.jpg');*/
 }
 body {
@@ -49,12 +50,12 @@ a {
   letter-spacing: 1px;
 }
 .letter-container h1 a span {
-  font-size: 50px;
+  font-size: 40px;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
   filter: alpha(opacity=90);
   color: #444;
-    opacity: 1;
-    text-shadow: 0px 0px 2px #444, 1px 1px 4px rgba(0,0,0,0.7);
+  opacity: 1;
+  text-shadow: 0px 0px 2px #444, 1px 1px 4px rgba(0,0,0,0.7);
   -webkit-mask-image: url(../img/mask.png);
   -moz-mask-image: url(../img/mask.png);
   -o-mask-image: url(../img/mask.png);
@@ -170,76 +171,95 @@ a {
 }
 @keyframes sharpen {
  0% {
-    opacity: 0;
-    text-shadow: 0px 0px 100px #444;
-    color: transparent;
- }
- 90% {
-    opacity: 0.9;
-    text-shadow: 0px 0px 10px #444;
-    color: transparent;
- }
- 100% {
-    color: #444;
-    opacity: 1;
-    text-shadow: 0px 0px 2px #444, 1px 1px 4px rgba(0,0,0,0.7);
- }
+  opacity: 0;
+  text-shadow: 0px 0px 100px #444;
+  color: transparent;
+}
+90% {
+  opacity: 0.9;
+  text-shadow: 0px 0px 10px #444;
+  color: transparent;
+}
+100% {
+  color: #444;
+  opacity: 1;
+  text-shadow: 0px 0px 2px #444, 1px 1px 4px rgba(0,0,0,0.7);
+}
 }
 @-moz-keyframes sharpen {
  0% {
-    opacity: 0;
-    text-shadow: 0px 0px 100px #444;
-    color: transparent;
- }
- 90% {
-    opacity: 0.9;
-    text-shadow: 0px 0px 10px #444;
-    color: transparent;
- }
- 100% {
-    color: #444;
-    opacity: 1;
-    text-shadow: 0px 0px 2px #444, 1px 1px 4px rgba(0,0,0,0.7);
- }
+  opacity: 0;
+  text-shadow: 0px 0px 100px #444;
+  color: transparent;
+}
+90% {
+  opacity: 0.9;
+  text-shadow: 0px 0px 10px #444;
+  color: transparent;
+}
+100% {
+  color: #444;
+  opacity: 1;
+  text-shadow: 0px 0px 2px #444, 1px 1px 4px rgba(0,0,0,0.7);
+}
 }
 @-webkit-keyframes sharpen {
  0% {
-    opacity: 0;
-    text-shadow: 0px 0px 100px #444;
-    color: transparent;
- }
- 90% {
-    opacity: 0.9;
-    text-shadow: 0px 0px 10px #444;
-    color: transparent;
- }
- 100% {
-    color: #444;
-    opacity: 1;
-    text-shadow: 0px 0px 2px #444, 1px 1px 4px rgba(0,0,0,0.7);
- }
+  opacity: 0;
+  text-shadow: 0px 0px 100px #444;
+  color: transparent;
+}
+90% {
+  opacity: 0.9;
+  text-shadow: 0px 0px 10px #444;
+  color: transparent;
+}
+100% {
+  color: #444;
+  opacity: 1;
+  text-shadow: 0px 0px 2px #444, 1px 1px 4px rgba(0,0,0,0.7);
+}
 }
 @-ms-keyframes sharpen {
  0% {
-    opacity: 0;
-    text-shadow: 0px 0px 100px #444;
-    color: transparent;
- }
- 90% {
-    opacity: 0.9;
-    text-shadow: 0px 0px 10px #444;
-    color: transparent;
- }
- 100% {
-    color: #444;
-    opacity: 1;
-    text-shadow: 0px 0px 2px #444, 1px 1px 4px rgba(0,0,0,0.7);
- }
+  opacity: 0;
+  text-shadow: 0px 0px 100px #444;
+  color: transparent;
+}
+90% {
+  opacity: 0.9;
+  text-shadow: 0px 0px 10px #444;
+  color: transparent;
+}
+100% {
+  color: #444;
+  opacity: 1;
+  text-shadow: 0px 0px 2px #444, 1px 1px 4px rgba(0,0,0,0.7);
+}
 }
 /* ------------------------------------------ HEADER */
 #top_banner {
   background: @accent;
   height: 10px;
+}
+#social_buttons a {
+  font-family: "Socialico";
+  font-size: 50px;
+  float: right;
+  /*margin: 12px 0px 12px;*/
+  position: relative;
+  top: -2px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+#social_buttons a:hover{
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
 }
 #header {
   overflow: auto;
@@ -253,7 +273,6 @@ a {
   color: #333333;
 }
 #title h1 {
-  text-transform: uppercase;
   font-weight: 900;
   margin: 0;
   font-size: 36px;
@@ -489,7 +508,10 @@ div .project {
   float: left;
   width: 300px;
 }
-#contact_section #contact_left .contact_buttons a {
+#contact_section #contact_left .contact_info i {
+  margin-right: 15px;
+}
+/*#contact_section #contact_left .contact_buttons a {
   display: inline-block;
   font-family: "Socialico";
   font-size: 64px;
@@ -507,7 +529,7 @@ div .project {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
-}
+}*/
 #contact_section #contact_left p {
   margin-top: 30px;
 }
