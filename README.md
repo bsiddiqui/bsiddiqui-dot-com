@@ -2,8 +2,7 @@ Personal Website
 
 TODO:
 
-- test mailer
-- integrate tumblr
-- theme change on refresh
+- integrate tumblr blog
 - add projects
 - customize css
+- add homepage
