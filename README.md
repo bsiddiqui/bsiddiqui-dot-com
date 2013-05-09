@@ -1,7 +1,6 @@
 Personal Website
 
 TODO:
-- add print css rules http://www.artofblog.com/print-and-mobile-css/
 - add custom error documents
 - consider caching
 - add projects
