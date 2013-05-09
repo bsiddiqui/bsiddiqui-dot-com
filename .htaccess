@@ -1,4 +1,4 @@
-ErrorDocument 404 /index.html#error
+ErrorDocument 404 http://latenightmunchies.com/bsiddiqui/#error
 
 ExpiresActive On
 ExpiresByType text/css A3600
