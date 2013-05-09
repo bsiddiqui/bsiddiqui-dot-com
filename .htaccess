@@ -1,0 +1,9 @@
+ErrorDocument 404 /index.html#error
+
+ExpiresActive On
+ExpiresByType text/css A3600
+ExpiresByType text/javascript A3600
+ExpiresByType image/JPEG A3600
+ExpiresByType image/GIF A3600
+ExpiresByType image/PNG A3600
+
