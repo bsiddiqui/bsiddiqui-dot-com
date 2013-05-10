@@ -434,7 +434,6 @@ a {
   margin: 5px 0px 10px;
 }
 #projects_section h4 {
-  display: inline-block;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -444,32 +443,33 @@ a {
   font-size: 12px;
 }
 .project {
+    float: left;
+    padding-bottom: 30px;
+    overflow: hidden;
 }
-.project img {
+.project .project_photo {
   width: 300px;
-  float: left;
-  margin-left: 50px;
+  height: 169px;
+  float: right;
+}
+.project .project_photo img {
+    width: 300px;
 }
 .project .details {
   width: 500px;
   float: left;
-  margin-right: 20px;
+  margin-right: 70px;
 }
-
-/*
-div .project {
-  float: left;
-  width: 290px;
-  margin: 20px 0 !important;
-  padding-right: 40px !important;
+/* ------------------------------------------ BLOG */
+#blog_section h2 {
+    margin-top: 40px !important;
 }
-.projects .project:nth-child(3n) {
-  padding-right: 0px !important;
+#blog_section h3 a {
+    color: @accent;
 }
-.project img {
-  width: 290px;
+#blog_section h3 a:hover {
+    color: #333333;
 }
-*/
 /* ------------------------------------------ ABOUT */
 #bio_section {
   overflow-x: hidden;
