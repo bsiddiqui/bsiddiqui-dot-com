@@ -6,7 +6,7 @@ $(window).load(function() {
 		$("#" + subpage + "_section").show();
 	}
 	else {
-		$("#home_section").show();
+		$("#bio_section").show();
 	}
 	$("#footer").show();
 
