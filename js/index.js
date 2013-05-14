@@ -59,11 +59,11 @@ $(window).load(function() {
 				return false;
 			}
 
-			var dataString = 'name=' + name + '&email=' + email + '&message=' + message;
+			var form_data = 'name=' + name + '&email=' + email + '&message=' + message;
 			$.ajax({
 				type: "POST",
 				url: "bin/process.php",
-				data: dataString,
+				data: form_data,
 				success: function() {
 					$('#contact_form').html("<div id='success'></div>");
 					$('#success').html("<p>Thanks! I'll be in touch soon.</p>")
