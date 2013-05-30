@@ -18,10 +18,10 @@ $(window).load(function() {
 	});
 
 	// Add theme color to footer
-	$(function (){
-		var color = rgb2hex($('#title p a').css('color')).toUpperCase();
-		$("#color").html("<a href='http://www.colourlovers.com/color/" + color + "'target='_blank'><span>#" + color + "</span></a>")
-	});
+	// $(function (){
+	// 	var color = rgb2hex($('#title p a').css('color')).toUpperCase();
+	// 	$("#color").html("<a href='http://www.colourlovers.com/color/" + color + "'target='_blank'><span>#" + color + "</span></a>")
+	// });
 
 	// Contact form submission
 	$(function() {

@@ -11,27 +11,28 @@
     <meta name="author"  content="Basil Siddiqui">
     <meta charset="UTF-8">
 
-    <script>
-// choose style sheet
-function chooseStyle() {
-    var css = ['css/accent133CA7.less','css/accentDB0C0C.less', 'css/accent077003.less'];
-    var i = Math.floor(Math.random()*css.length);
-    var style = css[i];
+    <!--<script>
+    // choose style sheet
+    function chooseStyle() {
+        var css = ['css/accent133CA7.less','css/accentDB0C0C.less', 'css/accent077003.less'];
+        var i = Math.floor(Math.random()*css.length);
+        var style = css[i];
 
-    return style;
-}
+        return style;
+    }
 
-document.write('<link rel="stylesheet/less" href="'+chooseStyle()+'" type="text/css">');
-</script>
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Open+Sans+Condensed:700|Satisfy" type="text/css">
-<link rel="stylesheet/less" href="css/font-awesome.less">
-<link rel="shortcut icon" href="images/favicon.ico">
+    document.write('<link rel="stylesheet/less" href="'+chooseStyle()+'" type="text/css">');
+    </script>-->
+    <link rel="stylesheet/less" href="css/accentDB0C0C.less" type="text/css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Open+Sans+Condensed:700|Satisfy" type="text/css">
+    <link rel="stylesheet/less" href="css/font-awesome.less">
+    <link rel="shortcut icon" href="images/favicon.ico">
 
-<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="js/scripts.js"></script>
-<script type="text/javascript" src="js/bjqs-1.3.min.js"></script>
-<script type="text/javascript" src="js/jquery.lettering.js"></script>
-<script type="text/javascript" src="js/less.js"></script>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/bjqs-1.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.lettering.js"></script>
+    <script type="text/javascript" src="js/less.js"></script>
 </head>
 <body>
     <div id="top_banner">&nbsp;</div>
@@ -53,9 +54,9 @@ document.write('<link rel="stylesheet/less" href="'+chooseStyle()+'" type="text/
             </div>
             <div id="navigation">
                 <a href="#bio">about</a>
-                <a href="#resume">r&eacute;sum&eacute;</a>
+                <a href="#resume">experience</a>
                 <a href="#projects">projects</a>
-                <a href="#blog">blog</a>
+                <a href="http://blog.bsiddiqui.com/">blog</a>
                 <a href="#contact">contact</a>
             </div>
         </div>
@@ -68,13 +69,13 @@ document.write('<link rel="stylesheet/less" href="'+chooseStyle()+'" type="text/
                     <div class="photo"><img src="images/me.png" alt="Basil's profile picture"></div>
                     <h3><a href="https://twitter.com/basilksiddiqui" target="_blank">@basilksiddiqui</a></h3>
                     <p class="twitter">I'm a junior, studying CS and Econ. I love coffee, traveling, ballroom, San Francisco, and making life better with technology</p>
-                    <h3 class="clear">If you want the longer version,</h3>
+                    <h3 class="clear">Aside from being a student,</h3>
                     <div class="bio_long">
-                        <p>Aside from being a student, I am an avid investor and entrepreneur. I love logic puzzles, hackathons, and solving problems with technology.</p>
+                        <p>I am an avid investor and entrepreneur. I love logic puzzles, hackathons, and solving problems with technology.</p>
 
                         <p>My goals in life are to support my family, be a great friend, travel the world, launch a company with a higher purpose than revenue, and to learn and grow from passionate and intelligent people.</p>
 
-                        <p>When I'm not working I enjoy ballroom dancing, listening to music, reading, trying new food, tasting wine, and traveling. You can learn more about me by <a href="https://twitter.com/basilksiddiqui" target="_blank">following me on twitter</a> or reading <a id="blog_link" href="#blog">my blog</a>.</p>
+                        <p>When I'm not working I enjoy ballroom dancing, listening to music, reading, trying new food, tasting wine, and traveling. You can learn more about me by <a href="https://twitter.com/basilksiddiqui" target="_blank">following me on twitter</a> or reading <a id="blog_link" href="http://blog.bsiddiqui.com/">my blog</a>.</p>
                     </div>
                 </div>
                 <div id="bio_right">
@@ -90,20 +91,13 @@ document.write('<link rel="stylesheet/less" href="'+chooseStyle()+'" type="text/
                         </ul>
                     </div>
                     <br/>
-                    <h2>Interests</h2>
+                    <!-- <h2>Interests</h2>
                     <ul class="loves">
                         <li>Ballroom dance</li>
                         <li>Logic puzzles</li>
                         <li>Javascript</li>
                         <li>Espresso</li>
-                    </ul>
-                    <h2>Favorite Sites</h2>
-                    <ul class="loves">
-                        <li>Stack Overflow</li>
-                        <li>Quora</li>
-                        <li>Lifehacker</li>
-                    </ul>
-
+                    </ul> -->
                 </div>
             </div>
             <div id="resume_section">
@@ -257,8 +251,11 @@ document.write('<link rel="stylesheet/less" href="'+chooseStyle()+'" type="text/
             </div>
         </div>
         <div id="footer">
-            Handcoded with love by <a href="https://github.com/bsiddiqui/" target="_blank">Basil Siddiqui</a>. The color of the moment is <span id="color"></span>&mdash;refresh for a makeover!
+            Handcoded with love by <a href="https://github.com/bsiddiqui/" target="_blank">Basil Siddiqui</a>.
         </div>
+        <!-- <div id="footer">
+            Handcoded with love by <a href="https://github.com/bsiddiqui/" target="_blank">Basil Siddiqui</a>. The color of the moment is <span id="color"></span>&mdash;refresh for a makeover!
+        </div> -->
     </div>
     <script>
 // Typography Effects - http://tympanus.net/codrops/2011/11/28/typography-effects-with-css3-and-jquery/
