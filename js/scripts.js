@@ -1,90 +1,5 @@
 $(window).load(function() {
 
-	// Display appropriate section on load
-	subpage = window.location.hash.substring(1);
-	if (subpage != "") {
-		$("#" + subpage + "_section").show();
-	}
-	else {
-		$("#bio_section").show();
-	}
-	$("#footer").show();
-
-	// Page transitions
-	$("#title a, #navigation a, .bio_long #blog_link").click(function() {
-		target = $(this).attr("href");
-		$("#main > div").hide();
-		$(target + "_section").fadeIn();
-	});
-
-	// Contact form submission
-	$(function() {
-		$('.error').hide();
-		$(".button").click(function() {
-			// Validate and process form here
-			var form = true;
-			$('.error').hide();
-
-			var name = $("input#name").val();
-			name = $.trim(name);
-			if (name == "") {
-				$("label#name_error").show(500);
-				$("input#name").focus();
-				form = false;
-			}
-
-			var email = $("input#email").val();
-			email = $.trim(email);
-			if (email == "") {
-				$("label#email_error").show(500);
-				$("input#email").focus();
-				form = false;
-			}
-
-			var message = $("textarea#message").val();
-			message = $.trim(message);
-			if (message == "") {
-				$("label#message_error").show(500);
-				$("textarea#message").focus();
-				form = false;
-			}
-
-			if (form == false) {
-				return false;
-			}
-
-			var form_data = 'name=' + name + '&email=' + email + '&message=' + message;
-			$.ajax({
-				type: "POST",
-				url: "bin/process.php",
-				data: form_data,
-				success: function() {
-					$('#contact_form').html("<div id='success'></div>");
-					$('#success').html("<p>Thanks! I'll be in touch soon.</p>")
-					.hide()
-					.fadeIn(300);
-				}
-			});
-			return false;
-
-		});
-});
-
-	// Initialize slider
-
-	$("#slider").bjqs({
-		animtype: 'fade',
-		height: 270,
-		width: 480,
-		usecaptions: true,
-		showmarkers: false,
-		animduration: 600,
-		animspeed: 6000,
-		nexttext: "&rarr;",
-		prevtext: "&larr;"
-	});
-});
-
 // HTML5 Grayscale Image Hover - http://webdesignerwall.com/tutorials/html5-grayscale-image-hover
 // Image desaturation
 $(window).load(function(){
@@ -141,13 +56,4 @@ function grayscale(src){
 	}
 	ctx.putImageData(imgPixels, 0, 0, 0, 0, imgPixels.width, imgPixels.height);
 	return canvas.toDataURL();
-}
-
-// Converts rgb values to hexadecimal
-function rgb2hex(rgb) {
-	rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
-	function hex(x) {
-		return ("0" + parseInt(x).toString(16)).slice(-2);
-	}
-	return hex(rgb[1]) + hex(rgb[2]) + hex(rgb[3]);
 }
