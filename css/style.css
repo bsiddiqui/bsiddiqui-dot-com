@@ -31,3 +31,6 @@ body {
   height: 33px;
   border-radius: 16px;
 }
+#social-buttons a {
+  text-decoration: none;
+}
