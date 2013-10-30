@@ -1,0 +1,33 @@
+body {
+  font-family: 'Noto Serif', serif;
+  /* background-image: url('../images/nyc.png'); */
+  /* background-size: 1400px; */
+  /* -webkit-background-size: 100%; */
+  /* -moz-background-size: 100%; */
+  /* -o-background-size: 100%; */
+  /* background-size: 100%; */
+  /* background-repeat: no-repeat; */
+}
+#wrapper {
+  margin: 0 auto;
+  text-align: center;
+}
+#left-column {
+}
+.short-description {
+  max-width: 506px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.profile-photo img{
+  border-radius: 50px;
+}
+.short-description {
+  color: #666665;
+  font-style: italic;
+}
+#social-buttons img {
+  margin: 2px;
+  height: 33px;
+  border-radius: 16px;
+}

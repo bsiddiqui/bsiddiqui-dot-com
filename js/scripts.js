@@ -1,5 +1,3 @@
-$(window).load(function() {
-
 // HTML5 Grayscale Image Hover - http://webdesignerwall.com/tutorials/html5-grayscale-image-hover
 // Image desaturation
 $(window).load(function(){
@@ -10,9 +8,9 @@ $(window).load(function(){
 	// Clone image
 	$("img").each(function(){
 		var el = $(this);
-		el.css({"position":"absolute"}).wrap("<div class='img_wrapper' style='display: inline-block; margin: 0'>").clone().addClass('img_grayscale').css({"position":"absolute","z-index":"998","opacity":"0"}).insertBefore(el).queue(function(){
+		el.css({"position":""}).wrap("<div class='img-wrapper' style='display: inline-block; margin: 0'>").clone().addClass('img-grayscale').css({"position":"absolute","z-index":"998","opacity":"0"}).insertBefore(el).queue(function(){
 			var el = $(this);
-			el.parent().css({"width":this.width - 30,"height":this.height});
+			// el.parent().css({"width":this.width - 30,"height":this.height});
 			el.dequeue();
 		});
 		this.src = grayscale(this.src);
