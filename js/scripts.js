@@ -10,6 +10,7 @@ $(window).load(function(){
 		var el = $(this);
 		el.css({"position":""}).wrap("<div class='img-wrapper' style='display: inline-block; margin: 0'>").clone().addClass('img-grayscale').css({"position":"absolute","z-index":"998","opacity":"0"}).insertBefore(el).queue(function(){
 			var el = $(this);
+			el.parent().css({"width":this.width - 30,"height":"100px"});
 			// el.parent().css({"width":this.width - 30,"height":this.height});
 			el.dequeue();
 		});
