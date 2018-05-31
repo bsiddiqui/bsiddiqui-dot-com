@@ -1,37 +1,55 @@
 body {
   font-family: 'Noto Serif', serif;
-  /* background-image: url('../images/nyc.png'); */
-  /* background-size: 1400px; */
-  /* -webkit-background-size: 100%; */
-  /* -moz-background-size: 100%; */
-  /* -o-background-size: 100%; */
-  /* background-size: 100%; */
-  /* background-repeat: no-repeat; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  margin-top: 100px;
+  width: 100vw;
+  flex-direction: column;
 }
+
 #wrapper {
   margin: 20px;
   text-align: center;
 }
-#left-column {
-}
+
 .short-description {
   max-width: 506px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .profile-photo img {
-  border-radius: 15px;
-  height: 176px;
+  /* border-radius: 88px; */
+  height: 250px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
+
+.profile-photo img:hover {
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+
 .short-description {
   color: #666665;
   font-style: italic;
 }
+
 #social-buttons img {
   margin: 2px;
   height: 33px;
   border-radius: 16px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
+
+#social-buttons img:hover {
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+
 #social-buttons a {
   text-decoration: none;
 }
